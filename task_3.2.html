@@ -1,0 +1,22 @@
+<html> 
+ 
+<head> 
+ 	<title>KeyUp</title> 
+ </head> 
+ <body> 
+ 
+ 
+     <h5 id="heading"></h5> 
+     <input id="inputbox" type="text" onkeyup="display()" /> 
+ <script type="text/javascript"> 
+ function display(){ 
+     var inputbox = document.getElementById('inputbox'); 
+     var elem = document.getElementById('heading'); 
+     elem.innerHTML = inputbox.value; 
+ } 
+  
+ </script> 
+ 
+ 
+ </body> 
+ </html> 

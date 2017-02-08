@@ -1,0 +1,39 @@
+<html> 
+ <head> 
+ 	<title>Events</title> 
+ </head> 
+ <body> 
+ 
+ 
+ <h1 id="heading"></h1> 
+ 
+ 
+ <input type="text" id="myinput" value="" onchange="displaytext()" /> 
+      
+ <h1 id="heading2"></h1> 
+     <select id="selcon" onchange="displayperfumes()"> 
+         <option>Revlon Charlie Red</option> 
+         <option>Tearose</option> 
+         <option>Trendy</option> 
+         <option>Skinn Nude</option> 
+         <option>Sunscent</option> 
+     
+     </select> 
+ 
+ 
+ <script type="text/javascript"> 
+ function displaytext(){ 
+     var inputelem = document.getElementById('myinput'); 
+     var elem = document.getElementById('heading'); 
+     elem.innerHTML = inputelem.value; 
+ } 
+ function displayperfumes(){ 
+     var selcon = document.getElementById('selcon'); 
+     var heading2 = document.getElementById('heading2'); 
+     heading2.innerHTML = "your present choosed perfume is "+selcon.value; 
+ } 
+ </script> 
+ 
+ 
+ </body> 
+ </html> 
